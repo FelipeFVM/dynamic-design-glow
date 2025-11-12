@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Quanto Vale o Seu Tempo?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Quanto Vale o Seu Tempo?</a>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="profissoes.html">Profissões</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Tempo para ter Produtos</h1>
+                <p class="hero-subtitle">Veja quantos meses, dias ou horas de trabalho são necessários para comprar produtos de luxo.</p>
+            </div>
+        </section>
+
+        <section class="products-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Nossos Produtos <span class="emoji-icon">🛍️</span></h2>
+                
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-category="todos">Todos</button>
+                    <button class="tab-btn" data-category="eletronicos">Eletrônicos</button>
+                    <button class="tab-btn" data-category="moda">Moda</button>
+                    <button class="tab-btn" data-category="transporte">Transporte</button>
+                    <button class="tab-btn" data-category="luxo">Luxo</button>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card card-elevated" data-category="eletronicos luxo">
+                        <img src="img/iphone-15-pro-icon.png" alt="iPhone 15 Pro" class="product-image">
+                        <h3 class="product-title">iPhone 15 Pro</h3>
+                        <p class="product-price">R$ 8.999</p>
+                        <span class="product-badge">5 meses de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=8999" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+                    
+                    <div class="product-card card-elevated" data-category="eletronicos luxo">
+                        <img src="img/macbook-pro-m3-icon.png" alt="MacBook Pro M3" class="product-image">
+                        <h3 class="product-title">MacBook Pro M3</h3>
+                        <p class="product-price">R$ 15.999</p>
+                        <span class="product-badge">9 meses de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=15999" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+                    
+                    <div class="product-card card-elevated" data-category="moda">
+                        <img src="img/nike-air-jordan-icon.png" alt="Tênis Nike Air Jordan" class="product-image">
+                        <h3 class="product-title">Tênis Nike Air Jordan</h3>
+                        <p class="product-price">R$ 1.299</p>
+                        <span class="product-badge">22 horas de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=1299" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+                    
+                    <div class="product-card card-elevated" data-category="moda luxo">
+                        <img src="img/louis-vuitton-bag-icon.png" alt="Bolsa Louis Vuitton" class="product-image">
+                        <h3 class="product-title">Bolsa Louis Vuitton</h3>
+                        <p class="product-price">R$ 3.500</p>
+                        <span class="product-badge">2,5 meses de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=3500" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+                    
+                    <div class="product-card card-elevated" data-category="transporte">
+                        <img src="img/honda-civic-icon.png" alt="Honda Civic" class="product-image">
+                        <h3 class="product-title">Honda Civic</h3>
+                        <p class="product-price">R$ 125.000</p>
+                        <span class="product-badge">7,5 anos de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=125000" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+                    
+                    <div class="product-card card-elevated" data-category="transporte luxo">
+                        <img src="img/harley-davidson-icon.png" alt="Harley Davidson" class="product-image">
+                        <h3 class="product-title">Harley Davidson</h3>
+                        <p class="product-price">R$ 65.000</p>
+                        <span class="product-badge">3,8 anos de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=65000" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+
+                    <div class="product-card card-elevated" data-category="eletronicos">
+                        <img src="img/PlayStation5-icon.png" alt="PlayStation 5" class="product-image">
+                        <h3 class="product-title">PlayStation 5</h3>
+                        <p class="product-price">R$ 4.499</p>
+                        <span class="product-badge">3,2 meses de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=4499" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+
+                    <div class="product-card card-elevated" data-category="luxo">
+                        <img src="img/rolex-icon.png" alt="Rolex Submariner" class="product-image">
+                        <h3 class="product-title">Rolex Submariner</h3>
+                        <p class="product-price">R$ 45.000</p>
+                        <span class="product-badge">2,6 anos de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=45000" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+
+                    <div class="product-card card-elevated" data-category="eletronicos">
+                        <<img src="img/smart-tv-icon.png" alt="Smart TV 75" class="product-image">
+                        <h3 class="product-title">Smart TV 75</h3>
+                        <p class="product-price">R$ 6.999</p>
+                        <span class="product-badge">4,9 meses de Salário Mínimo</span>
+                        <a href="calculadora.html?preco=6999" class="btn btn-secondary">Calcular para Mim</a>
+                    </div>
+                </div>
+
+                <div class="cta-card card-elevated dark-section">
+                    <h3 class="cta-title">Não encontrou o produto?</h3>
+                    <p class="cta-subtitle">Use a nossa calculadora para descobrir o tempo necessário para qualquer item.</p>
+                    <a href="calculadora.html" class="btn btn-primary">Ir para a Calculadora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <p class="footer-logo">Quanto Vale o Seu Tempo?</p>
+                <p class="footer-description">Um projeto focado em educação financeira e conscientização sobre a desigualdade social no Brasil.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="profissoes.html">Profissões</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Siga-nos</h4>
+                <div class="social-links">
+                    <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://x.com/">Twitter</a></li>
+                    <li><a href="https://github.com/brenobrand/ac2-web-design">GitHub</a></li>
+                    <li><a href="https://trello.com/b/J6mbsEtV/desenvolvimento-do-projeto">Trello</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quanto Vale o Seu Tempo?. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+</html>

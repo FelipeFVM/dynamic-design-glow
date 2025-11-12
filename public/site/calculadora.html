@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Quanto Vale o Seu Tempo?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Quanto Vale o Seu Tempo?</a>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calculadora.html" class="active">Calculadora</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="profissoes.html">Profissões</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Calculadora do Tempo</h1>
+                <p class="hero-subtitle">Descubra quantas horas de trabalho você precisa para comprar o que deseja.</p>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <div class="container">
+                <div class="calculator-form-card card-elevated scroll-reveal">
+                    <h2 class="form-title">Faça seu cálculo</h2>
+                    <form id="calculatorForm" class="calculator-form">
+                        <div class="input-group">
+                            <label for="salarioInput">Seu Salário Mensal (R$)</label>
+                            <input 
+                                type="number" 
+                                id="salarioInput" 
+                                step="0.01" 
+                                required
+                                aria-describedby="salarioInputFeedback"
+                            >
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="precoInput">Preço do Produto (R$)</label>
+                            <input 
+                                type="number" 
+                                id="precoInput" 
+                                step="0.01" 
+                                required
+                                aria-describedby="precoInputFeedback"
+                            >
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="horasMensaisInput">Horas Trabalhadas por Mês</label>
+                            <input 
+                                type="number" 
+                                id="horasMensaisInput" 
+                                value="176" 
+                                step="1" 
+                                required
+                                aria-describedby="horasMensaisInputFeedback"
+                            >
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Calcular Agora</button>
+                    </form>
+                </div>
+
+                <!-- Card de Resultado (oculto inicialmente) -->
+                <div id="resultadoCard" class="result-card card-elevated" style="display: none;">
+                    <div class="result-header">
+                        <span class="result-icon-emoji">⏰</span>
+                        <h3>Seu Resultado</h3>
+                    </div>
+                    <div class="result-details">
+                        <div class="result-item">
+                            <p class="result-label">Seu valor por hora:</p>
+                            <p class="result-value result-rate" id="resultadoValorHora">R$ 0,00</p>
+                        </div>
+                        <div class="result-item">
+                            <p class="result-label">Horas de trabalho necessárias:</p>
+                            <p class="result-value result-hours" id="resultadoHoras">0 horas</p>
+                        </div>
+                        <div class="result-item">
+                            <p class="result-label">Dias de trabalho (8h/dia):</p>
+                            <p class="result-value result-days" id="resultadoDias">0 dias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Histórico de Cálculos -->
+                <div id="historySection" class="history-section scroll-reveal" style="display: none;">
+                    <h3 class="history-title">📊 Histórico de Cálculos</h3>
+                    <ul id="historyList" class="history-list"></ul>
+                    <button id="clearHistoryBtn" class="clear-history-btn">Limpar Histórico</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section dark-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title cta-title">Compare com diferentes profissões</h2>
+                <p class="section-subtitle" style="color: white; opacity: 0.9;">Veja como diferentes salários impactam o tempo necessário.</p>
+                <a href="profissoes.html" class="btn btn-cta shadow-glow">Ver Profissões</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <p class="footer-logo">Quanto Vale o Seu Tempo?</p>
+                <p class="footer-description">Um projeto focado em educação financeira e conscientização sobre a desigualdade social no Brasil.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="profissoes.html">Profissões</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Siga-nos</h4>
+                <div class="social-links">
+                    <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://x.com/">Twitter</a></li>
+                    <li><a href="https://github.com/brenobrand/ac2-web-design">GitHub</a></li>
+                    <li><a href="https://trello.com/b/J6mbsEtV/desenvolvimento-do-projeto">Trello</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quanto Vale o Seu Tempo?. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissões - Quanto Vale o Seu Tempo?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Quanto Vale o Seu Tempo?</a>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="profissoes.html" class="active">Profissões</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Realidade Salarial no Brasil</h1>
+                <p class="hero-subtitle">Explore os dados e a desigualdade entre as diferentes profissões.</p>
+            </div>
+        </section>
+
+        <section class="stats-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Estatísticas Chave</h2>
+                <div class="stats-grid">
+                    <div class="stat-card card-elevated">
+                        <span class="stat-badge">Menor Salário</span>
+                        <h3 class="stat-number">R$ 1.412</h3>
+                    </div>
+                    <div class="stat-card card-elevated">
+                        <span class="stat-badge">Salário Médio*</span>
+                        <h3 class="stat-number">R$ 4.700</h3>
+                    </div>
+                    <div class="stat-card card-elevated">
+                        <span class="stat-badge">Diferença Máxima</span>
+                        <h3 class="stat-number">8,5x</h3>
+                    </div>
+                </div>
+                <p class="stat-note">* Salário médio calculado com base nas profissões listadas.</p>
+            </div>
+        </section>
+
+       <section class="professions-list-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Lista Completa de Salários</h2>
+                <div class="professions-grid">
+                    <div class="profession-card card-elevated">
+                        <img src="img/salario-minimo-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Salário Mínimo</h3>
+                        <span class="profession-salary">R$ 1.412</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 12%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/garcom-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Garçom/Atendente</h3>
+                        <span class="profession-salary">R$ 1.800</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 15%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/vendedor-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Vendedor</h3>
+                        <span class="profession-salary">R$ 2.200</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 18%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/motorista-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Motorista</h3>
+                        <span class="profession-salary">R$ 2.500</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 21%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/professor-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Professor</h3>
+                        <span class="profession-salary">R$ 3.500</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 29%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/enfermeiro-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Enfermeiro</h3>
+                        <span class="profession-salary">R$ 4.200</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 35%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/analista-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Analista</h3>
+                        <span class="profession-salary">R$ 5.500</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 46%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/programador-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Programador</h3>
+                        <span class="profession-salary">R$ 6.500</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 54%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/engenheiro-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Engenheiro</h3>
+                        <span class="profession-salary">R$ 8.000</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 67%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/advogado-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Advogado</h3>
+                        <span class="profession-salary">R$ 9.500</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 79%;"></div>
+                        </div>
+                    </div>
+                    <div class="profession-card card-elevated">
+                        <img src="img/medico-icon-removebg-preview.png" alt="Smart-tv" class="profession-image">
+                        <h3 class="profession-title">Médico</h3>
+                        <span class="profession-salary">R$ 12.000</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact-section dark-section">
+            <div class="container">
+                <h2 class="section-title impact-title">O Impacto da Desigualdade</h2>
+                <div class="impact-grid">
+                    <div class="impact-list-wrapper">
+                        <p class="impact-text-intro">A diferença de salários no Brasil é alarmante, e o nosso tempo de trabalho reflete essa disparidade.</p>
+                        <ul class="impact-list">
+                            <li><span class="list-icon">🔻</span> O salário mínimo mal cobre o básico e não permite o consumo de itens de maior valor.</li>
+                            <li><span class="list-icon">📈</span> O tempo necessário para comprar um mesmo produto varia drasticamente entre as profissões.</li>
+                            <li><span class="list-icon">💡</span> A educação financeira se torna crucial para planejar o futuro.</li>
+                        </ul>
+                    </div>
+                    <div class="impact-compare-box card-elevated">
+                        <h4 class="compare-title">Tempo para comprar um iPhone 15 Pro</h4>
+                        <div class="compare-item">
+                            <span class="compare-label">Salário Mínimo:</span>
+                            <span class="compare-value text-destructive">5 meses e 9 dias</span>
+                        </div>
+                        <div class="compare-item">
+                            <span class="compare-label">Professor:</span>
+                            <span class="compare-value text-accent">2 meses e 10 dias</span>
+                        </div>
+                        <div class="compare-item">
+                            <span class="compare-label">Médico:</span>
+                            <span class="compare-value text-primary">18 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="section-title cta-title">Calcule para sua própria profissão!</h2>
+                <a href="calculadora.html" class="btn btn-cta shadow-glow">Ir para a Calculadora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <p class="footer-logo">Quanto Vale o Seu Tempo?</p>
+                <p class="footer-description">Um projeto focado em educação financeira e conscientização sobre a desigualdade social no Brasil.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="profissoes.html">Profissões</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Siga-nos</h4>
+                <div class="social-links">
+                   <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://x.com/">Twitter</a></li>
+                    <li><a href="https://github.com/brenobrand/ac2-web-design">GitHub</a></li>
+                    <li><a href="https://trello.com/b/J6mbsEtV/desenvolvimento-do-projeto">Trello</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Quanto Vale o Seu Tempo?. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
